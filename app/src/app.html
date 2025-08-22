@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.2/swiper-bundle.css" integrity="sha512-DYPHyRjnB7Pksl1XIyl9W7EJO2oruGChyctjC9oUnIZMfzWCExMgPHwR3zOpSPEXyh6hEMowtIvTK6p+aeNXLA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta name="viewport" content="width=device-width" />
+	%sveltekit.head%
+</head>
+
+<body data-aos-easing="ease-in-out" data-aos-duration="600" data-aos-delay="0" data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.2/swiper-bundle.min.js" integrity="sha512-QSMp0RngktZnLj6y+Bii6xQ0H7Ym3qqAHYzD8Ld7aPqu36/0IijzW3p8JXQVah6d+vWD5Lu3/dPsAjdGG2RBcw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+		AOS.init({
+			duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+		});
+
+		new Swiper('.swiper', {
+			speed: 400,
+			loop: true,
+			autoplay: {
+				delay: 600,
+				disableOnInteraction: false
+			},
+			slidesPerView: 'auto',
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true
+			},
+			breakpoints: {
+				320: {
+					slidesPerView: 2,
+					spaceBetween: 40
+				},
+				480: {
+					slidesPerView: 3,
+					spaceBetween: 60
+				},
+				640: {
+					slidesPerView: 4,
+					spaceBetween: 80
+				},
+				992: {
+					slidesPerView: 6,
+					spaceBetween: 120
+				}
+			}
+    	});
+	</script>
+</body>
+
+<style>
+	
+
+</style>
+
+</html>
