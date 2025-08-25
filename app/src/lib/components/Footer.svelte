@@ -19,7 +19,7 @@
                 class="flex justify-center items-center text-2xl font-semibold text-white dark:text-white"
             >
                 <img
-                    src="/images/AFT.png"
+                    src="/images/livezone-logo.svg"
                     class="h-8 lg:h-10 mr-3 mt-3"
                     alt="AFT LOGO"
                     style="filter: invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);"
@@ -60,9 +60,6 @@
             </div>
         </div>
         <ul class="flex lg:flex-wrap space-y-2 lg:justify-between flex-col lg:flex-row items-center my-8 text-white dark:text-white">
-            <li>
-                <a href="/" class="mr-2 font-bold hover:underline md:mr-2">Présentation</a>
-            </li>
             <li>
                 <a href="/services" class="mr-2 font-bold hover:underline md:mr-2">Nos services</a>
             </li>

@@ -1,0 +1,38 @@
+<svg viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Primary gradient for icon -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Text gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2196f3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976d2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded square background for icon -->
+  <rect x="10" y="10" width="40" height="40" rx="10" ry="10" fill="url(#primaryGradient)"/>
+  
+  <!-- Music/Sound wave icon inside -->
+  <circle cx="22" cy="30" r="3" fill="white"/>
+  <path d="M26 30 Q32 24 38 30 Q32 36 26 30" fill="white"/>
+  <path d="M28 30 Q32 26 36 30 Q32 34 28 30" fill="white" opacity="0.7"/>
+  
+  <!-- Pulse animation for the icon -->
+  <circle cx="30" cy="30" r="10" fill="none" stroke="white" stroke-width="1" opacity="0">
+    <animate attributeName="r" values="6;14;6" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main text - stacked layout -->
+  <text x="60" y="28" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#textGradient)">Live</text>
+  <text x="60" y="48" font-family="Arial, sans-serif" font-size="24" font-weight="300" fill="#666666">Zone</text>
+  
+  <!-- Subtle accent dot -->
+  <circle cx="175" cy="30" r="2" fill="url(#primaryGradient)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

@@ -28,10 +28,10 @@
         >
             <a href="/" class="flex items-center">
                 <img
-                    src="/images/AFT.png"
-                    class="h-8 scale-72 mr-3"
+                    src="/images/livezone-logo.svg"
+                    class="h-64 scale-72 mr-3"
                     alt="Aft Logo"
-                    style="height: 40px;"
+                    style="height: 2.5em;"
                 />
             </a>
             <div class="hidden lg:block flex items-center lg:order-2">
@@ -70,13 +70,6 @@
                 <ul class="grid grid-cols-1 divide-y divide-gray-400 flex-col text-sm font-xs md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a
-                            href="/"
-                            class={`${$page.url.pathname === '/' ? 'bg-aftgroup text-white' : 'text-gray-400'} block py-2 w-full text-center text-gray-400 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent`}
-                            aria-current="page">Présentation</a
-                        >
-                    </li>
-                    <li>
-                        <a
                             href="/services"
                             class={`${$page.url.pathname.includes('/services') ? 'bg-aftgroup text-white' : 'text-gray-400'} block py-2 pl-3 pr-4 text-center text-gray-400 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent`}
                             aria-current="page">Nos services</a
@@ -111,71 +104,10 @@
                             >Pourquoi nous choisir</a
                         >
                     </li>
-                    <li>
-                        <a
-                            href="/devis"
-                            class={`${$page.url.pathname === '/devis' ? 'bg-aftgroup text-white' : 'text-gray-400'} block py-2 pl-3 pr-4 text-center text-gray-400 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
-                            >Demander un devis</a
-                        >
-                    </li>
                 </ul>
             </div>
             <div class="hidden w-full  md:block md:w-auto" id="navbar-dropdown">
                 <ul class="flex justify-end divide-y divide-gray-100 flex-col text-[20px] font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li>
-                        <button
-                            id="dropdownNavbarLink"
-                            data-dropdown-toggle="dropdownNavbar2"
-                            class={`${$page.url.pathname === '/' ? 'text-[#3561ab]' : 'text-gray-900'} flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
-                            >Présentation <svg
-                                class="w-2.5 h-2.5 ml-2.5"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 10 6"
-                            >
-                                <path
-                                    stroke="currentColor"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="m1 1 4 4 4-4"
-                                />
-                            </svg></button
-                        >
-                        <!-- Dropdown menu -->
-                        <div
-                            id="dropdownNavbar2"
-                            class="z-10 hidden text-xl max-w-lg font-medium bg-white divide-y divide-gray-300 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
-                        >
-                            <ul
-                                class="text-sm text-gray-700 dark:text-gray-400"
-                                aria-labelledby="dropdownLargeButton"
-                            >
-                                <div class="py-1">
-                                    <a
-                                        href="/#aboutus_section"
-                                        class="block px-8 py-2 text-[20px] text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
-                                        >Qui sommes-nous ?</a
-                                    >
-                                </div>
-                            </ul>
-                            <div class="py-1">
-                                <a
-                                    href="/#products_section"
-                                    class="block px-8 py-2 text-[20px] text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
-                                    >Nos projets / produits</a
-                                >
-                            </div>
-                            <div class="py-1">
-                                <a
-                                    href="/#whychooseuse_section"
-                                    class="block px-8 py-2 text-[20px] text-gray-900 hover:bg-gray-100 md:hover:text-aftgroup dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white"
-                                    >Pourquoi nous choisir ?</a
-                                >
-                            </div>
-                        </div>
-                    </li>
                     <li>
                         <a
                             href="/services"
