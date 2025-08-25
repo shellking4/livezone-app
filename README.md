@@ -18,3 +18,4 @@ The CMS is based on PocketBase and deployed on Hop.io. Follow these steps to dep
     - make sure to delete the directory 'pb_public' by running `rm -rf pb_publi` (this insures old cached static files are removed)
     - run `cp -r ../app/build ./pb_public`
     - run `hop deploy` (this deploy the cms to hop.io with your authenticated account)
+
