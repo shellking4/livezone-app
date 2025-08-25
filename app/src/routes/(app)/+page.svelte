@@ -91,7 +91,7 @@
 </svelte:head>
 
 <div class="">
-    <section class="bg-cover bg-center h-screen bg-no-repeat bg-[url('/images/homme-affaires-mondial-detenant-concepts-communication-futuristes-sphere-rougeoyante-generes-par-ia_188544-36806.jpg')] bg-gray-700 bg-blend-multiply">
+    <section class="bg-cover bg-center h-screen bg-no-repeat bg-[url('/images/studioview.jpg')] bg-gray-500 bg-blend-multiply">
         <div data-aos="fade-up"
             data-aos-duration="1000"
             class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12"
@@ -100,12 +100,14 @@
                 <h1
                     class="max-w-2xl mb-4 lg:mt-[20vh] mt-[10vh] text-white text-2xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
                 >
-                    {@html jumbotron ?? ""}
+                    <!-- {@html jumbotron ?? ""} -->
+                    Livezone: Un seul studio pour tous vos besoins musicaux
                 </h1>
                 <p
                     class="max-w-2xl mb-6 text-white font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
                 >
-                    {@html subJumbotron ?? ""}
+                    <!-- {@html subJumbotron ?? ""} -->
+                     Votre partenaire de confiance pour la production musicale, l'enregistrement, le mixage le mastering et les performances live
                 </p>
                 <a href="/#contact_section" class="inline-flex mt-4 lg:hidden justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-aftgroup hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     Contactez nous
@@ -242,23 +244,6 @@
                 src="/images/Group 162533.png"
                 alt=""
             />
-
-            <div data-aos="fade-up"
-                data-aos-duration="1000" class="max-w-screen-lg mb-3 mt-8 lg:mb-4">
-                <h2 data-aos="fade"
-                    class="mb-4 flex justify-center lg:text-4xl text-lg tracking-tight font-extrabold text-gray-900 dark:text-white"
-                >
-                    <img
-                        class="lg:px-3 px-1 lg:h-8 h-6"
-                        src="/images/Group 162578.png"
-                        alt="group buffer"
-                    />
-                    <p>Nos formations</p>
-                </h2>
-                <p class="text-gray-800 lg:text-lg text-sm dark:text-gray-400">
-                    {@html trainingsDescription}
-                </p>
-            </div>
         </div>
     </section>
 
@@ -529,63 +514,6 @@
         src="/images/Group 162533.png"
         alt=""
     />
-
-    <section data-aos="fade" class="mt-2 dark:bg-aftgroupdark">
-        <div class="py-4 lg:py-2 w-full px-4">
-            <h2
-                class="mb-2 flex justify-center lg:mb-8 lg:text-4xl text-lg font-extrabold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl"
-            >
-                <img
-                    class="lg:px-3 px-1 lg:h-8 h-6"
-                    src="/images/Group 162578.png"
-                    alt="group buffer"
-                />
-                <p>Nos partenaires</p>
-            </h2>
-        </div>
-    </section>
-
-    <!-- partners logos -->
-    <div data-aos="fade-up" data-aos-duration="1000" class="p-4 hidden lg:block bg-aftgroupdark md:p-8 lg:p-10 dark:bg-gray-800">
-        <div class="mx-auto max-w-screen-xl text-center">
-            <div class="flex justify-center space-x-16">
-                <a href="/" class="flex justify-center items-center">
-                    <img src="/images/AFTblanc 1.png" alt="partner" />
-                </a>
-                <a href="/" class="flex justify-center items-center">
-                    <img src="/images/AFTblanc 1.png" alt="partner" />
-                </a>
-                <a href="/" class="flex justify-center items-center">
-                    <img src="/images/AFTblanc 1.png" alt="partner" />
-                </a>
-                <a href="/" class="flex justify-center items-center">
-                    <img src="/images/AFTblanc 1.png" alt="partner" />
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- partners section mobile -->
-    <div class="p-4 lg:hidden sm:block mb-8 bg-aftgroupdark md:p-8 lg:p-10 dark:bg-gray-800">
-        <div class="mx-auto max-w-screen-xl text-center">
-            <div
-                class="grid grid-cols-2 flex justify-center gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-gray-400"
-            >
-                <a href="/" class="flex justify-center items-center">
-                    <img src="/images/AFTblanc 1.png" alt="partner" />
-                </a>
-                <a href="/" class="flex justify-center items-center">
-                    <img src="/images/AFTblanc 1.png" alt="partner" />
-                </a>
-                <a href="/" class="flex justify-center items-center">
-                    <img src="/images/AFTblanc 1.png" alt="partner" />
-                </a>
-                <a href="/" class="flex justify-center items-center">
-                    <img src="/images/AFTblanc 1.png" alt="partner" />
-                </a>
-            </div>
-        </div>
-    </div>
 
     <img
         class="w-10 h-10 md:w-30 md:h-30"
