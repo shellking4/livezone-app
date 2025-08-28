@@ -1,9 +1,6 @@
 import { pocketbase } from "$lib/commons/rest";
 import { pbAuth } from "$lib/commons/utils";
 
-export const csr = true;
-export const ssr = false;
-
 const getHomePageData = async () => {
     const homePageSections = await pocketbase.collection('home_page_sections').getFullList({
         sort: '-created',

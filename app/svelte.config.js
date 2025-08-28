@@ -1,21 +1,17 @@
-import sveltePreprocess from 'svelte-preprocess'
-import adapter from '@sveltejs/adapter-vercel';
+import { vitePreprocess } from "@sveltejs/kit/vite";
+import adapter from '@sveltejs/adapter-static';
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	preprocess: [
-		sveltePreprocess({
-		  postcss: true,
-		}),
-	],
-	compilerOptions: {
-        customElement: true,
-    },
 	extensions: ['.svelte'],
+	preprocess: [vitePreprocess({})],
 	kit: {
-		adapter: adapter(),
-	}
+		adapter: adapter({
+			prerender: { entries: [] },
+      		fallback: "index.html", // enable SPA mode
+		}),
+	},
 };
-
 
 export default config;
