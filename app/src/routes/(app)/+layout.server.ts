@@ -80,14 +80,14 @@ export const load = async () => {
         await pbAuth();
     }
     return {
-        homePageData: await getHomePageData(),
-        services: await getServicesData(),
-        products: await getProductsData(),
-        socialMediaLinks: await getSocialMediaLinksData(),
-        servicesPageData: await getServicesPageDataAlt(),
-        servicesPageDataByTab: await getServicesPageData(),
-        trainingsPageData: await getTrainingsPageData(),
+        homePageData: getHomePageData(),
+        services: getServicesData(),
+        products: getProductsData(),
+        socialMediaLinks: getSocialMediaLinksData(),
+        servicesPageData: getServicesPageDataAlt(),
+        servicesPageDataByTab: getServicesPageData(),
+        trainingsPageData: getTrainingsPageData(),
         estimatePageData: getEstimatePageData(),
-        estimateQuestions: await getEstimateQuestions(),
+        estimateQuestions: getEstimateQuestions(),
     }
 }
