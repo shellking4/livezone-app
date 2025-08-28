@@ -37,7 +37,7 @@
             <div class="hidden lg:block flex items-center lg:order-2">
                 <a href="/#contact_section" class="relative inline-flex items-center mt-2 justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-aftgroup to-aftgroup group-hover:from-aftgroup group-hover:to-aftgroup hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
                     <span class="relative px-5 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                        Nous Contacter
+                        Faire votre réservation
                     </span>
                 </a>
             </div>
@@ -70,7 +70,7 @@
                 <ul class="grid grid-cols-1 divide-y divide-gray-400 flex-col text-sm font-xs md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a
-                            href="/services"
+                            href="/#services_section"
                             class={`${$page.url.pathname.includes('/services') ? 'bg-aftgroup text-white' : 'text-gray-400'} block py-2 pl-3 pr-4 text-center text-gray-400 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent`}
                             aria-current="page">Nos services</a
                         >
@@ -85,7 +85,7 @@
                     </li>
                     <li>
                         <a
-                            href="/formations"
+                            href="/#services_section"
                             class={`${$page.url.pathname.includes('/formations') ? 'bg-aftgroup text-white' : 'text-gray-400'} block py-2 text-center pl-3 pr-4 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
                             >Nos formations</a
                         >
@@ -110,23 +110,16 @@
                 <ul class="flex justify-end divide-y divide-gray-100 flex-col text-[20px] font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                     <li>
                         <a
-                            href="/services"
+                            href="/#services_section"
                             class={`${$page.url.pathname.includes('/services') ? 'text-[#3561ab]' : 'text-gray-900'} block py-2 pl-3 pr-4 text-gray-900 rounded md:bg-transparent bg-blue-700 md:hover:text-aftgroup text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent`}
                             >Nos services</a
                         >
                     </li>
                     <li>
-                        <a href="/formations"
+                        <a href="/#formations_section"
                             class={`${$page.url.pathname.includes('/formations') ? 'text-[#3561ab]' : 'text-gray-900'} block py-2 pl-3 pr-4 text-gray-900 md:hover:text-aftgroup rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-text-aftgroup md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}>
                             Nos formations
                         </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/devis"
-                            class={`${$page.url.pathname.includes('/devis') ? 'text-[#3561ab]' : 'text-gray-900'} block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-aftgroup md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent`}
-                            >Demander un devis</a
-                        >
                     </li>
                 </ul>
             </div>

@@ -61,20 +61,20 @@
         </div>
         <ul class="flex lg:flex-wrap space-y-2 lg:justify-between flex-col lg:flex-row items-center my-8 text-white dark:text-white">
             <li>
-                <a href="/services" class="mr-2 font-bold hover:underline md:mr-2">Nos services</a>
+                <a href="/#services_section" class="mr-2 font-bold hover:underline md:mr-2">Nos services</a>
             </li>
             <li>
-                <a href="/formations" class="mr-2 font-bold hover:underline md:mr-2">Nos formations</a>
+                <a href="/#services_section" class="mr-2 font-bold hover:underline md:mr-2">Nos formations</a>
             </li>
             <li>
-                <a href="/devis" class="mr-2 font-bold hover:underline md:mr-2">Demander un devis</a>
+                <a href="/" class="mr-2 font-bold hover:underline md:mr-2">Faire une réservation</a>
             </li>
         </ul>
         <p class="my-6 font-medium text-white dark:text-gray-400">
-            <a class="hover:underline" href="/">Conditions d'utilisation</a>|<a class="hover:underline" href="/">Mentions légales</a>|<a class="hover:underline" href="/">Politique de confidentialité</a> 
+            <a class="hover:underline" href="/">Conditions d'utilisation</a> | <a class="hover:underline" href="/">Mentions légales</a> | <a class="hover:underline" href="/">Politique de confidentialité</a> 
         </p>
         <span class="text-sm font-bold text-white sm:text-center dark:text-gray-400">
-            Copyright © {(new Date()).getFullYear()} | Made by AFT GROUP
+            Copyright © {(new Date()).getFullYear()} | Powered by <a href="https://metatronicx.com" class="hover:underline dark:text-purple-500">Metatronicx</a>
         </span>
     </div>
 </footer>

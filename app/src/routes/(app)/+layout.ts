@@ -3,6 +3,7 @@ import { pbAuth } from "$lib/commons/utils";
 
 export const csr = true;
 export const ssr = false;
+export const prerender = true;
 
 const getHomePageData = async () => {
     const homePageSections = await pocketbase.collection('home_page_sections').getFullList({
