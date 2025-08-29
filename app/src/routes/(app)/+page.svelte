@@ -12,6 +12,7 @@
     import { createForm } from "felte";
     import { validator } from "@felte/validator-yup";
     import { pocketbase } from "$lib/commons/rest";
+    import CalBooking from "$lib/components/CalBooking.svelte";
 
     onMount(() => {
         initDropdowns();
@@ -27,6 +28,12 @@
     let trainingsDescription = getPageSectionItem("trainings_description");
     let productsDescription = getPageSectionItem("products_description");
     let whyChooseUs = getPageSectionItem("why_choose_us");
+
+    let showCalBooking = false;
+
+    function toggleCalBooking() {
+        showCalBooking = !showCalBooking;
+    }
 
     let services = [
         {
@@ -716,3 +723,10 @@
         alt=""
     />
 </div>
+
+{#if showCalBooking}
+    <CalBooking
+        selectedService="recording"
+        onClose={() => (showCalBooking = false)}
+    />
+{/if}
